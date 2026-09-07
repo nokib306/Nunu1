@@ -1,0 +1,6 @@
+{
+  "name": "Haque'sFam",
+  "description": "A private, secure family-only social network, messenger, live location, media cloud, and organization platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
