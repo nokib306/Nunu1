@@ -94,8 +94,7 @@ fun EmergencySosDialog(
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(12.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color(0xFFFEF2F2)),
-                    border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFECACA))
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFFFEF2F2))
                 ) {
                     Row(
                         modifier = Modifier.padding(12.dp),

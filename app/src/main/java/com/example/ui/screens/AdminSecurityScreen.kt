@@ -87,7 +87,6 @@ fun AdminSecurityScreen(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(20.dp),
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF1E3A8A)),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFF3B82F6)),
                 elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
             ) {
                 Column(modifier = Modifier.padding(20.dp)) {
@@ -129,8 +128,7 @@ fun AdminSecurityScreen(
                     // Invitation Code Box
                     Surface(
                         shape = RoundedCornerShape(14.dp),
-                        color = Color.White.copy(alpha = 0.12f),
-                        border = androidx.compose.foundation.BorderStroke(1.dp, Color.White.copy(alpha = 0.25f))
+                        color = Color.White.copy(alpha = 0.12f)
                     ) {
                         Row(
                             modifier = Modifier
@@ -216,7 +214,6 @@ fun AdminSecurityScreen(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(18.dp),
                 colors = CardDefaults.cardColors(containerColor = Color.White),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE2E8F0)),
                 elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
@@ -258,8 +255,7 @@ fun AdminSecurityScreen(
 
                         Surface(
                             shape = RoundedCornerShape(8.dp),
-                            color = Color(0xFFDCFCE7),
-                            border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFF86EFAC))
+                            color = Color(0xFFDCFCE7)
                         ) {
                             Text(
                                 text = "ACTIVE",
@@ -280,7 +276,6 @@ fun AdminSecurityScreen(
                         Surface(
                             shape = RoundedCornerShape(10.dp),
                             color = Color(0xFFF8FAFC),
-                            border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE2E8F0)),
                             modifier = Modifier.weight(1f)
                         ) {
                             Column(
@@ -304,7 +299,6 @@ fun AdminSecurityScreen(
                         Surface(
                             shape = RoundedCornerShape(10.dp),
                             color = Color(0xFFF8FAFC),
-                            border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE2E8F0)),
                             modifier = Modifier.weight(1f)
                         ) {
                             Column(
@@ -328,7 +322,6 @@ fun AdminSecurityScreen(
                         Surface(
                             shape = RoundedCornerShape(10.dp),
                             color = Color(0xFFF8FAFC),
-                            border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE2E8F0)),
                             modifier = Modifier.weight(1f)
                         ) {
                             Column(
@@ -358,8 +351,7 @@ fun AdminSecurityScreen(
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(18.dp),
-                colors = CardDefaults.cardColors(containerColor = Color.White),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE2E8F0))
+                colors = CardDefaults.cardColors(containerColor = Color.White)
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -392,10 +384,6 @@ fun AdminSecurityScreen(
                         Surface(
                             shape = RoundedCornerShape(12.dp),
                             color = if (isCurrent) Color(0xFFEFF6FF) else Color.White,
-                            border = androidx.compose.foundation.BorderStroke(
-                                1.dp,
-                                if (isCurrent) Color(0xFF3B82F6) else Color(0xFFF1F5F9)
-                            ),
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(vertical = 4.dp)
@@ -451,7 +439,6 @@ fun AdminSecurityScreen(
                         onClick = { viewModel.openJoinFamilyDialog() },
                         shape = RoundedCornerShape(10.dp),
                         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEFF6FF)),
-                        border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFBFDBFE)),
                         modifier = Modifier
                             .fillMaxWidth()
                             .testTag("admin_add_member_switcher_btn")
@@ -479,8 +466,7 @@ fun AdminSecurityScreen(
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(18.dp),
-                colors = CardDefaults.cardColors(containerColor = Color.White),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE2E8F0))
+                colors = CardDefaults.cardColors(containerColor = Color.White)
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Row(
@@ -542,8 +528,7 @@ fun AdminSecurityScreen(
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(18.dp),
-                colors = CardDefaults.cardColors(containerColor = Color.White),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFE2E8F0))
+                colors = CardDefaults.cardColors(containerColor = Color.White)
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically) {

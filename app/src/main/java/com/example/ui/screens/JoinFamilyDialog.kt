@@ -108,7 +108,6 @@ fun JoinFamilyDialog(
                 .testTag("join_family_dialog"),
             shape = RoundedCornerShape(24.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White),
-            border = BorderStroke(1.dp, Color(0xFFE2E8F0)),
             elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
         ) {
             Column(
@@ -270,8 +269,7 @@ fun JoinFamilyDialog(
                                     selectedLabelColor = Color.White,
                                     containerColor = Color(0xFFF1F5F9),
                                     labelColor = Color(0xFF475569)
-                                ),
-                                border = BorderStroke(1.dp, if (isSelected) Color(0xFF2563EB) else Color(0xFFE2E8F0))
+                                )
                             )
                         }
                     }
@@ -350,8 +348,7 @@ fun JoinFamilyDialog(
                     // Role selection pill
                     Surface(
                         shape = RoundedCornerShape(12.dp),
-                        color = Color(0xFFF8FAFC),
-                        border = BorderStroke(1.dp, Color(0xFFE2E8F0))
+                        color = Color(0xFFF8FAFC)
                     ) {
                         Row(
                             modifier = Modifier
@@ -378,7 +375,6 @@ fun JoinFamilyDialog(
                                 Surface(
                                     shape = RoundedCornerShape(8.dp),
                                     color = if (selectedRole == FamilyRole.TRUSTED_MEMBER) Color(0xFF2563EB) else Color.White,
-                                    border = BorderStroke(1.dp, if (selectedRole == FamilyRole.TRUSTED_MEMBER) Color(0xFF2563EB) else Color(0xFFCBD5E1)),
                                     modifier = Modifier.clickable { selectedRole = FamilyRole.TRUSTED_MEMBER }
                                 ) {
                                     Text(
@@ -393,7 +389,6 @@ fun JoinFamilyDialog(
                                 Surface(
                                     shape = RoundedCornerShape(8.dp),
                                     color = if (selectedRole == FamilyRole.OWNER) Color(0xFF1E3A8A) else Color.White,
-                                    border = BorderStroke(1.dp, if (selectedRole == FamilyRole.OWNER) Color(0xFF1E3A8A) else Color(0xFFCBD5E1)),
                                     modifier = Modifier.clickable { selectedRole = FamilyRole.OWNER }
                                 ) {
                                     Text(
@@ -500,7 +495,6 @@ fun JoinFamilyDialog(
                         Surface(
                             shape = RoundedCornerShape(16.dp),
                             color = Color(0xFFF1F5F9),
-                            border = BorderStroke(2.dp, Color(0xFF2563EB)),
                             modifier = Modifier.fillMaxWidth()
                         ) {
                             Row(
@@ -589,7 +583,6 @@ fun JoinFamilyDialog(
                         Surface(
                             shape = RoundedCornerShape(12.dp),
                             color = Color(0xFFF8FAFC),
-                            border = BorderStroke(1.dp, Color(0xFFE2E8F0)),
                             modifier = Modifier.fillMaxWidth()
                         ) {
                             Column(modifier = Modifier.padding(14.dp)) {
